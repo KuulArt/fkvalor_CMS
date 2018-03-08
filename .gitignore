@@ -36,6 +36,7 @@ Thumbs.db
 # resharper
 *_Resharper.*
 *.Resharper
+node_modules/
 
 # dotCover
 *.dotCover
