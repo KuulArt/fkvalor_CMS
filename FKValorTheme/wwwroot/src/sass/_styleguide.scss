@@ -1,9 +1,15 @@
 @import 'fonts';
 /* Sample color palette */
-$sand: #e2ac61;
+$sand: #fed417;
 $white: #ededed;
 $true-white: #ffffff;
+$dark-grey: #363334;
 
+$max-width: 900px;
+body {
+  font-family: Akrobat-Light;
+  letter-spacing: 1px;
+}
 /* Text styles */
 h1 {
 	font-family: Akrobat-ExtraBold;
@@ -30,6 +36,10 @@ p {
 }
 
 a {
-    text-decoration: none;
+	font-family: Akrobat-Light;
+	text-decoration: none;
     color: $sand;
+	&:hover {
+		color: $white;
+	}
 }

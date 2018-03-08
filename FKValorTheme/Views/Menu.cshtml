@@ -24,14 +24,20 @@
     // items before the tag is actually rendered.
 
     TagBuilder tag = Tag(Model, "ul");
-    tag.AddCssClass("nav");
+    tag.AddCssClass("navbar-nav");
 
+    var logoWrapper = new TagBuilder("div");
+    logoWrapper.AddCssClass("menu-logo-wrapper");
+
+    
     var logo = new TagBuilder("img");
     logo.MergeAttribute("src", "/FKValorTheme/img/logo.svg");
     logo.MergeAttribute("alt", "FKValor logo");
     logo.AddCssClass("menu-logo");
+    
+    logoWrapper.InnerHtml.AppendHtml(logo);
 
-    tag.InnerHtml.AppendHtml(logo);
+    tag.InnerHtml.AppendHtml(logoWrapper);
 
     foreach (var item in Model.Items)
     {
@@ -39,6 +45,11 @@
     }
 }
 
-<nav id="main-menu">
-    @tag
+<nav id="main-menu" class="navbar navbar-expand-md  justify-content-between">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        @tag
+    </div>
 </nav>

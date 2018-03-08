@@ -6028,19 +6028,23 @@ a.text-dark:hover, a.text-dark:focus {
 
 @font-face {
   font-family: 'Akrobat-ExtraBold';
-  src: url("/content/fonts/Akrobat-ExtraBold.eot");
-  src: url("/content/fonts/Akrobat-ExtraBold.woff2") format("woff2"), url("/content/fonts/Akrobat-ExtraBold.woff") format("woff"), url("/content/fonts/Akrobat-ExtraBold.ttf") format("truetype"), url("/content/fonts/Akrobat-ExtraBold.svg#Akrobat-ExtraBold") format("svg"), url("/content/fonts/Akrobat-ExtraBold.eot?#iefix") format("embedded-opentype");
+  src: url("/FKValorTheme/fonts/Akrobat-ExtraBold.eot");
+  src: url("/FKValorTheme/fonts/Akrobat-ExtraBold.woff2") format("woff2"), url("/FKValorTheme/fonts/Akrobat-ExtraBold.woff") format("woff"), url("/FKValorTheme/fonts/Akrobat-ExtraBold.ttf") format("truetype"), url("/FKValorTheme/fonts/Akrobat-ExtraBold.svg#Akrobat-ExtraBold") format("svg"), url("/FKValorTheme/fonts/Akrobat-ExtraBold.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Akrobat-Light';
-  src: url("/content/fonts/Akrobat-Light.eot");
-  src: url("/content/fonts/Akrobat-Light.woff2") format("woff2"), url("/content/fonts/Akrobat-Light.woff") format("woff"), url("/content/fonts/Akrobat-Light.ttf") format("truetype"), url("/content/fonts/Akrobat-Light.svg#Akrobat-Light") format("svg"), url("/content/fonts/Akrobat-Light.eot?#iefix") format("embedded-opentype");
+  src: url("/FKValorTheme/fonts/Akrobat-Light.eot");
+  src: url("/FKValorTheme/fonts/Akrobat-Light.woff2") format("woff2"), url("/FKValorTheme/fonts/Akrobat-Light.woff") format("woff"), url("/FKValorTheme/fonts/Akrobat-Light.ttf") format("truetype"), url("/FKValorTheme/fonts/Akrobat-Light.svg#Akrobat-Light") format("svg"), url("/FKValorTheme/fonts/Akrobat-Light.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
 
 /* Sample color palette */
+body {
+  font-family: Akrobat-Light;
+  letter-spacing: 1px; }
+
 /* Text styles */
 h1 {
   font-family: Akrobat-ExtraBold;
@@ -6054,7 +6058,7 @@ h2 {
   font-size: 36px;
   font-weight: 300;
   text-align: left;
-  color: #e2ac61; }
+  color: #fed417; }
 
 p {
   font-family: Akrobat-Light;
@@ -6064,8 +6068,14 @@ p {
   color: #ffffff; }
 
 a {
+  font-family: Akrobat-Light;
   text-decoration: none;
-  color: #e2ac61; }
+  color: #fed417; }
+  a:hover {
+    color: #ededed; }
+
+.content-wrapper {
+  background-color: #fed417; }
 
 .container-fluid.header {
   padding: 0; }
@@ -6076,12 +6086,89 @@ a {
     .container-fluid.header img {
       display: block; } }
 
-#main-menu {
-  background-color: #000000; }
+.widget-container {
+  max-width: 900px;
+  margin: auto; }
+  .widget-container p.text-muted {
+    margin-bottom: 0; }
 
-.nav.menu {
+#main-menu {
+  background-color: #363334;
+  padding-top: 20px; }
+
+.navbar-nav.menu {
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
+  .navbar-nav.menu a {
+    font-size: 22px;
+    font-weight: bold; }
+
+.nav-item {
+  margin: 0 10px; }
+
+.menu-logo-wrapper {
+  position: relative;
+  width: 140px;
+  height: 50px; }
 
 .menu-logo {
-  height: 60px; }
+  position: absolute;
+  height: 110px;
+  top: -35px;
+  transform: rotate(-5deg); }
+
+.content {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 0; }
+
+.blog-summary {
+  display: flex;
+  justify-content: center;
+  /* align-self: center;    <---- REMOVE */
+  align-items: center;
+  margin-bottom: 40px; }
+  .blog-summary > * {
+    width: 100%;
+    text-align: center; }
+  .blog-summary .summary-image {
+    position: relative;
+    width: initial; }
+  .blog-summary img {
+    width: 100%;
+    height: auto; }
+    @media (min-width: 768px) {
+      .blog-summary img {
+        height: 250px;
+        width: auto; } }
+  .blog-summary a {
+    background-color: #363334;
+    width: 90px;
+    height: 22px;
+    line-height: 22px;
+    font-weight: bold; }
+  .blog-summary h3 {
+    margin-top: 12px;
+    font-family: Akrobat-ExtraBold;
+    margin-bottom: -22px;
+    z-index: 4;
+    font-size: 36px; }
+  .blog-summary p {
+    background: url(/FKValorTheme/img/text-backgroun.png) bottom center no-repeat;
+    height: 101px;
+    color: black;
+    padding-top: 30px;
+    font-family: Akrobat-ExtraBold;
+    font-size: 24px;
+    margin-bottm: 10px; }
+
+.date {
+  position: absolute;
+  background-color: #363334;
+  color: #fed417;
+  width: 96px;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  letter-spacing: 1px; }

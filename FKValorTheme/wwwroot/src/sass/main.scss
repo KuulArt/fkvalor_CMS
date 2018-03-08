@@ -3,6 +3,9 @@
 @import 'mixins';
 @import 'settings';
 
+.content-wrapper {
+  background-color: $sand;
+}
 .container-fluid.header {
     padding: 0;
     img {
@@ -16,15 +19,109 @@
     }
 }
 
-#main-menu {
-    background-color: #000000;
+.widget-container {
+  max-width: 900px;
+  margin: auto;
+  p.text-muted {
+    margin-bottom: 0;
+  }
 }
 
-.nav.menu{
+#main-menu {
+    background-color: $dark-grey;
+    padding-top: 20px;
+}
+
+.navbar-nav.menu{
     justify-content: center;
     align-items: center;
+    width: 100%;
+    a {
+        font-size: 22px;
+        font-weight: bold;
+    }
 }
 
+.nav-item {
+    margin: 0 10px;
+}
+
+.menu-logo-wrapper {
+    position: relative;
+    width: 140px;
+    height: 50px;
+}
 .menu-logo {
-    height: 60px;
+    position: absolute;
+    height: 110px;
+    top: -35px;
+    transform: rotate(-5deg);
+}
+
+.content {
+  max-width: $max-width;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.blog-summary {
+  display: flex;
+  justify-content: center;
+  /* align-self: center;    <---- REMOVE */
+  align-items: center;
+  margin-bottom: 40px;
+  & > * {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .summary-image {
+    position: relative;
+    width: initial;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    @include media-breakpoint-up(md) {
+      height: 250px;
+      width: auto;
+    }
+  }
+  
+  a {
+    background-color: $dark-grey;
+    width: 90px;
+    height: 22px;
+    line-height: 22px;
+    font-weight: bold;
+  }
+  
+  h3 {
+    margin-top: 12px;
+    font-family: Akrobat-ExtraBold;
+    margin-bottom: -22px;
+    z-index: 4;
+    font-size: 36px;
+  }
+  
+  p{
+    background: url(/FKValorTheme/img/text-backgroun.png) bottom center no-repeat;
+    height: 101px;
+    color: black;
+    padding-top: 30px;
+    font-family: Akrobat-ExtraBold;
+    font-size: 24px;
+    margin-bottm: 10px;
+  }
+}
+
+.date {
+  position: absolute;
+  background-color: $dark-grey;
+  color: $sand;
+  width: 96px;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }

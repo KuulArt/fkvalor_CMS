@@ -31,6 +31,8 @@
         <title>@RenderTitleSegments(site.SiteName, "before")</title>
         
         <!-- Bootstrap CSS -->
+        <link href="/TheAgencyTheme/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 @*        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">*@
 
         <!-- Custom styles for this template -->
@@ -42,9 +44,11 @@
     </div>
     @*    @await DisplayAsync(await New.Menu(ContentItemId: "main-menu"))*@
     <menu alias="alias:main-menu" cache-id="main-menu" cache-duration="00:00:00" cache-tag="alias:main-menu" />
-            <p>@Model.ContentItems</p>
-
-        @await RenderSectionAsync("Content", required: false)
+    <section class="content-wrapper">
+        <div class="content">
+            @await RenderSectionAsync("Content", required: false)
+        </div>
+    </section>
 
         <!-- Footer -->
         @await RenderSectionAsync("Footer", required: false)
