@@ -1,0 +1,8 @@
+Default:
+  RequestUrlHost: &669065888 ~
+  RequestUrlPrefix: ~
+  DatabaseProvider: Sqlite
+  TablePrefix: fk-valor
+  ConnectionString: ~
+  State: Running
+...

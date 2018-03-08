@@ -1,0 +1,9 @@
+@model OrchardCore.Lists.ViewModels.ListPartViewModel
+@inject OrchardCore.ContentManagement.Display.IContentItemDisplayManager ContentItemDisplayManager
+@foreach (var item in Model.ContentItems)
+{
+    var contentItemSummary = await ContentItemDisplayManager.BuildDisplayAsync(item, Model.Context.Updater, "Summary", Model.Context.GroupId);
+    @await DisplayAsync(contentItemSummary)
+}
+
+@await DisplayAsync(Model.Pager)
