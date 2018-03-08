@@ -22,6 +22,6 @@
     <None Remove="wwwroot\**" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FK Valor Theme\FK Valor Theme.csproj" />
+    <ProjectReference Include="..\FKValorTheme\FKValorTheme.csproj" />
   </ItemGroup>
 </Project>

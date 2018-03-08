@@ -1,0 +1,24 @@
+@inject OrchardCore.Settings.ISiteService SiteService
+@{
+    var site = await SiteService.GetSiteSettingsAsync();
+}
+<!DOCTYPE html>
+<html lang="@site.Culture">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>@RenderTitleSegments(site.SiteName, "before")</title>
+        
+        <!-- Custom styles for this template -->
+        <link href="/FKValorTheme/css/main.css" rel="stylesheet">
+    </head>
+    <body id="page-top">
+
+        @await RenderSectionAsync("Content", required: false)
+
+        <!-- Footer -->
+        @await RenderSectionAsync("Footer", required: false)
+    </body>
+</html>
