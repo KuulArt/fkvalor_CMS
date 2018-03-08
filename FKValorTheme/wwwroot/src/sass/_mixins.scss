@@ -1,0 +1,44 @@
+//// $=Breakpoint
+//// --------------------------------------------------------------------------
+//
+//@mixin breakpoint($query, $fix-ie: false) {   
+//      @if ($query-fix == false) {
+//          @if ($fix-ie) {
+//              .old-ie &{
+//              @content;
+//              }
+//          }
+//          @if (length($query) == 2) {
+//              @media only screen and (nth($query, 1)) and (nth($query, 2)) {
+//                  @content;
+//              }
+//          }
+//        
+//          @if (length($query) == 1) {
+//              @media only screen and ($query) {
+//                  @content;
+//              }
+//          }
+//  
+//      }
+//  
+//      @else if ($fix-ie and $query-fix) {
+//          @content;
+//      }
+//  
+//      @else if ($query-fix) {
+//        
+//          @if (type-of($query-fix) == 'bool') {
+//              @content;
+//          }
+//          
+//          @else {
+//              @each $value in $query-fix {
+//                  @if ($query == $value) {
+//                      @content
+//                  }
+//              }
+//          }
+//  
+//      }
+//  }

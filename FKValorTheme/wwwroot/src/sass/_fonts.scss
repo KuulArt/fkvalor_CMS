@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Akrobat-ExtraBold';
+    src: url('/content/fonts/Akrobat-ExtraBold.eot');
+    src: url('/content/fonts/Akrobat-ExtraBold.woff2') format('woff2'),
+         url('/content/fonts/Akrobat-ExtraBold.woff') format('woff'),
+         url('/content/fonts/Akrobat-ExtraBold.ttf') format('truetype'),
+         url('/content/fonts/Akrobat-ExtraBold.svg#Akrobat-ExtraBold') format('svg'),
+         url('/content/fonts/Akrobat-ExtraBold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat-Light';
+    src: url('/content/fonts/Akrobat-Light.eot');
+    src: url('/content/fonts/Akrobat-Light.woff2') format('woff2'),
+            url('/content/fonts/Akrobat-Light.woff') format('woff'),
+            url('/content/fonts/Akrobat-Light.ttf') format('truetype'),
+            url('/content/fonts/Akrobat-Light.svg#Akrobat-Light') format('svg'),
+            url('/content/fonts/Akrobat-Light.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}

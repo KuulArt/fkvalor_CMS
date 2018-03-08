@@ -1,0 +1,35 @@
+@import 'fonts';
+/* Sample color palette */
+$sand: #e2ac61;
+$white: #ededed;
+$true-white: #ffffff;
+
+/* Text styles */
+h1 {
+	font-family: Akrobat-ExtraBold;
+	font-size: 60px;
+	font-weight: 800;
+	text-align: left;
+    color: $white;
+}
+
+h2 {
+	font-family: Akrobat-Light;
+	font-size: 36px;
+	font-weight: 300;
+	text-align: left;
+    color: $sand;
+}
+
+p {
+	font-family: Akrobat-Light;
+	font-size: 24px;
+	font-weight: 300;
+	text-align: left;
+    color: $true-white;
+}
+
+a {
+    text-decoration: none;
+    color: $sand;
+}

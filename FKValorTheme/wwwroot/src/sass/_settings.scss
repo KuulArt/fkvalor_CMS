@@ -1,0 +1,34 @@
+//$base-font-size:                    16px;
+//
+//// $=Media-query breakpoints
+//// --------------------------------------------------------------------------
+//
+//$bp-small-up:                       (500px / $base-font-size) * 1em;
+//$bp-small-down:                     (499px / $base-font-size) * 1em;
+//$bp-medium-up:                      (770px / $base-font-size) * 1em;
+//$bp-medium-down:                    (769px / $base-font-size) * 1em;
+//$bp-large-up:                       (1000px / $base-font-size) * 1em;
+//$bp-large-down:                     (999px / $base-font-size) * 1em;
+//$bp-x-large-up:                     (1300px / $base-font-size) * 1em;
+//$bp-x-large-down:                   (1299px / $base-font-size) * 1em;
+//$bp-big-up:                         (1600px / $base-font-size) * 1em;
+//$bp-mega-up:                        (1800px / $base-font-size) * 1em;
+//$bp-x-mega-up:                      (2000px / $base-font-size) * 1em;
+//
+//// these are helpers for ex. @include breaktpoit($medium-up);
+//$small-up:                          'min-width:' + $bp-small-up;
+//$small-down:                        'max-width:' + $bp-small-down;
+//$medium-up:                         'min-width:' + $bp-medium-up;
+//$medium-down:                       'max-width:' + $bp-medium-down;
+//$large-up:                          'min-width:' + $bp-large-up;
+//$large-down:                        'max-width:' + $bp-large-down;
+//$x-large-up:                        'min-width:' + $bp-x-large-up;
+//$x-large-down:                      'max-width:' + $bp-x-large-down;
+//$big-up:                            'min-width:' + $bp-big-up;
+//$mega-up:                           'min-width:' + $bp-mega-up;
+//$x-mega-up:                         'min-width:' + $bp-x-mega-up;
+//$landscape:                         'landscape';
+
+// Help oldIE out
+// $query-fix variable true/false or a CSS selector name
+$query-fix:                         false !default;

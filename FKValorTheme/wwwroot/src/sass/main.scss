@@ -1,0 +1,30 @@
+@import 'bootstrap/bootstrap';
+@import 'styleguide';
+@import 'mixins';
+@import 'settings';
+
+.container-fluid.header {
+    padding: 0;
+    img {
+        display: none;
+        width: 100%;
+    }
+    @include media-breakpoint-up(md) {
+        img {
+            display: block;
+        }
+    }
+}
+
+#main-menu {
+    background-color: #000000;
+}
+
+.nav.menu{
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-logo {
+    height: 60px;
+}

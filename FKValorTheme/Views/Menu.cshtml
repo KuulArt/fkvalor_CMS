@@ -1,0 +1,44 @@
+@*<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">*@
+@*    <div class="container">*@
+@*        <a class="navbar-brand js-scroll-trigger" href="~/#page-top">{{ Site.SiteName }}</a>*@
+@*        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">*@
+@*            Menu*@
+@*            <i class="fa fa-bars"></i>*@
+@*        </button>*@
+@*        <div class="collapse navbar-collapse" id="navbarResponsive">*@
+@*            <ul class="navbar-nav text-uppercase ml-auto">*@
+@*                @foreach (var item in Model.Items)*@
+@*                {*@
+@*                    @await DisplayAsync(item)*@
+@*                }*@
+@*                $1$                {% for item in Model.Items %}#1#*@
+@*                $1$                {{ item | shape_render }}#1#*@
+@*                $1$                {% endfor %}#1#*@
+@*            </ul>*@
+@*        </div>*@
+@*    </div>*@
+@*</nav>*@
+@{
+    // By using a tag builder, sub items can alter the
+    // menu element. Note how Display is called on the menu
+    // items before the tag is actually rendered.
+
+    TagBuilder tag = Tag(Model, "ul");
+    tag.AddCssClass("nav");
+
+    var logo = new TagBuilder("img");
+    logo.MergeAttribute("src", "/FKValorTheme/img/logo.svg");
+    logo.MergeAttribute("alt", "FKValor logo");
+    logo.AddCssClass("menu-logo");
+
+    tag.InnerHtml.AppendHtml(logo);
+
+    foreach (var item in Model.Items)
+    {
+        tag.InnerHtml.AppendHtml(await DisplayAsync(item));
+    }
+}
+
+<nav id="main-menu">
+    @tag
+</nav>
