@@ -3,67 +3,137 @@
 @import 'mixins';
 @import 'settings';
 
+// General
 .content-wrapper {
   background-color: $sand;
 }
+
 .container-fluid.header {
-    padding: 0;
+  padding: 0;
+  img {
+    display: none;
+    width: 100%;
+  }
+  @include media-breakpoint-up(md) {
     img {
-        display: none;
-        width: 100%;
+      display: block;
     }
-    @include media-breakpoint-up(md) {
-        img {
-            display: block;
-        }
-    }
+  }
 }
 
 .widget-container {
   max-width: 900px;
   margin: auto;
+}
+
+.row.footer {
+  font-size: 10px;
+  color: $dark-grey;
+  margin: 10px 10px 30px 10px;
+  & > * {
+    margin-bottom: 10px;
+  }
   p.text-muted {
     margin-bottom: 0;
+    color: $dark-grey;
+    font-size: 14px;
   }
-}
 
-#main-menu {
-    background-color: $dark-grey;
-    padding-top: 20px;
-}
-
-.navbar-nav.menu{
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    a {
-        font-size: 22px;
-        font-weight: bold;
-    }
-}
-
-.nav-item {
-    margin: 0 10px;
-}
-
-.menu-logo-wrapper {
-    position: relative;
-    width: 140px;
-    height: 50px;
-}
-.menu-logo {
-    position: absolute;
-    height: 110px;
-    top: -35px;
-    transform: rotate(-5deg);
+  .list-inline {
+    margin: 0;
+  }
+  span {
+    color: $dark-grey;
+  }
 }
 
 .content {
   max-width: $max-width;
   margin: auto;
-  padding: 40px 0;
+  padding: 0;
+  padding-bottom: 20px;
+  @include media-breakpoint-up(sm) {
+    padding: 40px 0;
+  }
 }
 
+// Menu
+#main-menu {
+  background-color: $dark-grey;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  @include media-breakpoint-up(md) {
+    padding-top: 20px;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.navbar-nav.menu {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  a {
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.menu-logo-wrapper {
+  position: relative;
+  width: 140px;
+  height: 50px;
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
+
+.mobile-logo-wrapper {
+  width: 100px;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.menu-logo {
+  position: absolute;
+  height: 110px;
+  top: 23px;
+  left: 10%;
+  transform: rotate(-5deg);
+  z-index: 4;
+  @include media-breakpoint-up(md) {
+    left: initial;
+    top: -35px;
+  }
+}
+
+.navbar-brand {
+  font-family: Akrobat-ExtraBold;
+  color: $sand;
+  font-size: 32px;
+  margin: 0;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.navbar-toggler {
+  color: $sand;
+  padding-left: 5px;
+  padding-bottom: 3px;
+  padding-right: 35px;
+  font-size: 32px;
+  &:focus {
+    outline: none;
+  }
+}
+
+// Home Page / Blog Page
 .blog-summary {
   display: flex;
   justify-content: center;
@@ -74,7 +144,7 @@
     width: 100%;
     text-align: center;
   }
-  
+
   .summary-image {
     position: relative;
     width: initial;
@@ -82,20 +152,31 @@
   img {
     width: 100%;
     height: auto;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
       height: 250px;
       width: auto;
     }
   }
-  
+
   a {
+    width: 159px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 26px;
+    font-family: Akrobat-ExtraBold;
+
+    @include media-breakpoint-up(sm) {
+      width: 90px;
+      height: 22px;
+      line-height: 22px;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: Akrobat-Light;
+
+    }
     background-color: $dark-grey;
-    width: 90px;
-    height: 22px;
-    line-height: 22px;
-    font-weight: bold;
   }
-  
+
   h3 {
     margin-top: 12px;
     font-family: Akrobat-ExtraBold;
@@ -103,15 +184,34 @@
     z-index: 4;
     font-size: 36px;
   }
-  
-  p{
+
+  p {
     background: url(/FKValorTheme/img/text-backgroun.png) bottom center no-repeat;
     height: 101px;
+    @include media-breakpoint-down(sm) {
+      background-size: 317px 95px;
+      width: 317px;
+      margin: auto;
+      font-size: 16px;
+    }
     color: black;
     padding-top: 30px;
     font-family: Akrobat-ExtraBold;
     font-size: 24px;
-    margin-bottm: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.description{
+  padding: 0 15px;
+  margin-bottom: 15px;
+  @include media-breakpoint-up(sm) {
+    padding: initial;
+  }
+  
+  & > * {
+    width: 100%;
+    text-align: center;
   }
 }
 
