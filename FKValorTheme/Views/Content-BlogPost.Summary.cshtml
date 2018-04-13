@@ -1,27 +1,4 @@
-@using Newtonsoft.Json.Linq
-@using OrchardCore.ContentManagement
-@*@inject OrchardCore.ContentManagement.Display.IContentItemDisplayManager ContentItemDisplayManager*@
 <div class="blog-summary row">
-    @{
-        var dateCreated = Model.ContentItem.CreatedUtc.ToString("dd.MM.yy");
-        if (Model.ContentItem.Content.BlogPost.Image is JObject jObject)
-        {
-            var contentItem = jObject.ToObject<ContentItem>();
-            var imagePath = "/media/" + contentItem.Content.Paths[0];
-            <span class="summary-image">
-                <img  src=@imagePath?width=500&height=300/>
-                <span class="date">@dateCreated</span>
-            </span>
-            // Could use later a separate template for this, but fck it for now, Im tired
-//        var contentItemSummary = await ContentItemDisplayManager.BuildDisplayAsync(contentItem, Model.Context.Updater, "Summary", Model.Context.GroupId);
-        
-        }
-    }
-
-    <div class="description">
-        <h3>@Model.ContentItem.Content.TitlePart.Title</h3>
-        <p>@Model.ContentItem.Content.BlogPost.Subtitle.Text</p>
-    </div>
-    <a href="@Model.ContentItem.Content.AutoroutePart.Path">Lasi tālāk!</a>
+    @Html.Partial("Shared/_BlogSummary.cshtml")
+    <a class="button" href="@Model.ContentItem.Content.AutoroutePart.Path">Lasi tālāk!</a>
 </div>
-

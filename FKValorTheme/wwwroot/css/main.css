@@ -6040,39 +6040,54 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'allerregular';
+  src: url("/FKValorTheme/fonts/aller_std_rg-webfont.eot");
+  src: url("/FKValorTheme/fonts/aller_std_rg-webfont.eot?#iefix") format("embedded-opentype"), url("/FKValorTheme/fonts/aller_std_rg-webfont.woff2") format("woff2"), url("/FKValorTheme/fonts/aller_std_rg-webfont.woff") format("woff"), url("/FKValorTheme/fonts/aller_std_rg-webfont.ttf") format("truetype"), url("/FKValorTheme/fonts/aller_std_rg-webfont.svg#allerregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'allerbold';
+  src: url("/FKValorTheme/fonts/aller_std_bd-webfont.eot");
+  src: url("/FKValorTheme/fonts/aller_std_bd-webfont.eot?#iefix") format("embedded-opentype"), url("/FKValorTheme/fonts/aller_std_bd-webfont.woff2") format("woff2"), url("/FKValorTheme/fonts/aller_std_bd-webfont.woff") format("woff"), url("/FKValorTheme/fonts/aller_std_bd-webfont.ttf") format("truetype"), url("/FKValorTheme/fonts/aller_std_bd-webfont.svg#allerbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /* Sample color palette */
 body {
-  font-family: Akrobat-Light;
-  letter-spacing: 1px; }
+  font-family: allerregular; }
 
 /* Text styles */
 h1 {
-  font-family: Akrobat-ExtraBold;
+  font-family: allerbold;
   font-size: 60px;
   font-weight: 800;
   text-align: left;
-  color: #ededed; }
+  color: #212529; }
 
 h2 {
-  font-family: Akrobat-Light;
+  font-family: allerbold;
   font-size: 36px;
   font-weight: 300;
   text-align: left;
-  color: #fed417; }
+  color: #212529; }
 
 p {
-  font-family: Akrobat-Light;
-  font-size: 24px;
-  font-weight: 300;
+  font-family: allerregular;
+  font-size: 22px;
   text-align: left;
-  color: #ffffff; }
+  color: #212529; }
 
-a {
-  font-family: Akrobat-Light;
+a, button {
+  font-family: Akrobat-ExtraBold;
   text-decoration: none;
-  color: #fed417; }
-  a:hover {
+  color: #fed417;
+  border: none; }
+  a:hover, button:hover {
     color: #ededed; }
+  a:focus, button:focus {
+    outline: none; }
 
 .content-wrapper {
   background-color: #fed417; }
@@ -6109,7 +6124,8 @@ a {
   max-width: 900px;
   margin: auto;
   padding: 0;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  background: url("/FKValorTheme/img/background.svg"); }
   @media (min-width: 576px) {
     .content {
       padding: 40px 0; } }
@@ -6133,6 +6149,8 @@ a {
 
 .nav-item {
   margin: 0 10px; }
+  .nav-item a {
+    font-family: Akrobat-Light; }
 
 .menu-logo-wrapper {
   position: relative;
@@ -6198,21 +6216,6 @@ a {
       .blog-summary img {
         height: 250px;
         width: auto; } }
-  .blog-summary a {
-    width: 159px;
-    height: 34px;
-    line-height: 34px;
-    font-size: 26px;
-    font-family: Akrobat-ExtraBold;
-    background-color: #363334; }
-    @media (min-width: 576px) {
-      .blog-summary a {
-        width: 90px;
-        height: 22px;
-        line-height: 22px;
-        font-size: 18px;
-        font-weight: bold;
-        font-family: Akrobat-Light; } }
   .blog-summary h3 {
     margin-top: 12px;
     font-family: Akrobat-ExtraBold;
@@ -6222,15 +6225,17 @@ a {
   .blog-summary p {
     background: url(/FKValorTheme/img/text-backgroun.png) bottom center no-repeat;
     height: 101px;
+    background-size: 600px 95px;
+    width: 600px;
+    margin: auto auto 0 auto;
     color: black;
     padding-top: 30px;
     font-family: Akrobat-ExtraBold;
-    font-size: 24px;
-    margin-bottom: 10px; }
+    font-size: 24px; }
     @media (max-width: 767.98px) {
       .blog-summary p {
-        background-size: 317px 95px;
-        width: 317px;
+        background-size: 295px 95px;
+        width: 295px;
         margin: auto;
         font-size: 16px; } }
 
@@ -6252,4 +6257,44 @@ a {
   top: 10px;
   right: 10px;
   font-weight: bold;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-family: Akrobat-ExtraBold; }
+
+.button {
+  width: 159px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 26px;
+  font-family: Akrobat-ExtraBold;
+  background-color: #363334; }
+  @media (min-width: 576px) {
+    .button {
+      width: 100px;
+      height: 22px;
+      line-height: 22px;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: Akrobat-Light; } }
+
+.back-button-wrapper {
+  text-align: center; }
+
+.return-button {
+  margin: 30px auto 50px auto; }
+
+.trenini {
+  text-align: center; }
+  .trenini h1 {
+    text-align: center; }
+
+.trenini-saraksts {
+  max-width: 280px; }
+  @media (min-width: 576px) {
+    .trenini-saraksts {
+      max-width: 560px; } }
+  @media (min-width: 768px) {
+    .trenini-saraksts {
+      max-width: 760px; } }
+  @media (min-width: 992px) {
+    .trenini-saraksts {
+      max-width: 900px; } }

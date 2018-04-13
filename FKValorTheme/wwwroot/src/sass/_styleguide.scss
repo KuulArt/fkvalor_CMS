@@ -4,42 +4,46 @@ $sand: #fed417;
 $white: #ededed;
 $true-white: #ffffff;
 $dark-grey: #363334;
+$black:		#212529;
 
 $max-width: 900px;
 body {
-  font-family: Akrobat-Light;
-  letter-spacing: 1px;
+  font-family: allerregular
 }
 /* Text styles */
 h1 {
-	font-family: Akrobat-ExtraBold;
+	font-family: allerbold;
 	font-size: 60px;
 	font-weight: 800;
 	text-align: left;
-    color: $white;
+    color: $black;
 }
 
 h2 {
-	font-family: Akrobat-Light;
+	font-family: allerbold;
 	font-size: 36px;
 	font-weight: 300;
 	text-align: left;
-    color: $sand;
+    color: $black;
 }
 
 p {
-	font-family: Akrobat-Light;
-	font-size: 24px;
-	font-weight: 300;
+	font-family: allerregular;
+	font-size: 22px;
 	text-align: left;
-    color: $true-white;
+    color: $black;
 }
 
-a {
-	font-family: Akrobat-Light;
+a, button {
+	font-family: Akrobat-ExtraBold;
 	text-decoration: none;
     color: $sand;
+	border: none;
 	&:hover {
 		color: $white;
+	}
+	
+	&:focus {
+		outline: none;
 	}
 }

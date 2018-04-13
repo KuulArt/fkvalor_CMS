@@ -1,0 +1,11 @@
+<div class="blog-summary row">
+    @Html.Partial("Shared/_BlogSummary.cshtml")
+</div>
+
+<section>
+    @*Lets convert markdown to html here*@
+    @Html.Raw(Markdig.Markdown.ToHtml((string)Model.ContentItem.Content.MarkdownPart.Markdown))
+    <div class="back-button-wrapper">
+        <button class="button return-button" onclick="window.history.go(-1); return false;">Atpakaļ</button>
+    </div>
+</section>

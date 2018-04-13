@@ -1,0 +1,24 @@
+@using Newtonsoft.Json.Linq
+@using OrchardCore.ContentManagement
+@*@inject OrchardCore.ContentManagement.Display.IContentItemDisplayManager ContentItemDisplayManager*@
+@{
+    var dateCreated = Model.ContentItem.CreatedUtc.ToString("dd.MM.yy");
+    var image = FKValorTheme.Helpers.Helpers.GetImagePath(Model.ContentItem.Content.BlogPost.Image, "500", "300");
+    if (!string.IsNullOrEmpty(image))
+    {
+        <span class="summary-image">
+            <img  src=@image/>
+            <span class="date">@dateCreated</span>
+        </span>
+        // Could use later a separate template for this, but fck it for now, Im tired
+//        var contentItemSummary = await ContentItemDisplayManager.BuildDisplayAsync(contentItem, Model.Context.Updater, "Summary", Model.Context.GroupId);
+    
+    }
+}
+
+<div class="description">
+    <h3>@Model.ContentItem.Content.TitlePart.Title</h3>
+    <p>@Model.ContentItem.Content.BlogPost.Subtitle.Text</p>
+</div>
+
+

@@ -55,6 +55,7 @@
   @include media-breakpoint-up(sm) {
     padding: 40px 0;
   }
+  background: url("/FKValorTheme/img/background.svg");
 }
 
 // Menu
@@ -80,6 +81,9 @@
 
 .nav-item {
   margin: 0 10px;
+  a {
+    font-family: Akrobat-Light;
+  }
 }
 
 .menu-logo-wrapper {
@@ -159,22 +163,7 @@
   }
 
   a {
-    width: 159px;
-    height: 34px;
-    line-height: 34px;
-    font-size: 26px;
-    font-family: Akrobat-ExtraBold;
 
-    @include media-breakpoint-up(sm) {
-      width: 90px;
-      height: 22px;
-      line-height: 22px;
-      font-size: 18px;
-      font-weight: bold;
-      font-family: Akrobat-Light;
-
-    }
-    background-color: $dark-grey;
   }
 
   h3 {
@@ -188,9 +177,12 @@
   p {
     background: url(/FKValorTheme/img/text-backgroun.png) bottom center no-repeat;
     height: 101px;
+    background-size: 600px 95px;
+    width: 600px;
+    margin: auto auto 0 auto;
     @include media-breakpoint-down(sm) {
-      background-size: 317px 95px;
-      width: 317px;
+      background-size: 295px 95px;
+      width: 295px;
       margin: auto;
       font-size: 16px;
     }
@@ -198,7 +190,6 @@
     padding-top: 30px;
     font-family: Akrobat-ExtraBold;
     font-size: 24px;
-    margin-bottom: 10px;
   }
 }
 
@@ -224,4 +215,55 @@
   right: 10px;
   font-weight: bold;
   letter-spacing: 1px;
+  font-family: Akrobat-ExtraBold;
+}
+
+.button {
+  width: 159px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 26px;
+  font-family: Akrobat-ExtraBold;
+
+  @include media-breakpoint-up(sm) {
+    width: 100px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Akrobat-Light;
+
+  }
+  background-color: $dark-grey;
+}
+
+.back-button-wrapper {
+  text-align: center;
+}
+
+.return-button {
+  margin: 30px auto 50px auto;
+}
+
+//Trenini
+.trenini {
+  text-align: center;
+  
+  h1 {
+    text-align: center;
+  }
+}
+.trenini-saraksts {
+  max-width: 280px;
+  @include media-breakpoint-up(sm) {
+    max-width: 560px;
+  }
+
+  @include media-breakpoint-up(md) {
+    max-width: 760px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 900px;
+  }
 }
