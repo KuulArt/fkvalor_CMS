@@ -2,12 +2,13 @@
 @*    @Html.Partial("Shared/_BlogSummary.cshtml")*@
 @*</div>*@
 @{
-    var image = FKValorTheme.Helpers.Helpers.GetImagePath(Model.ContentItem.Content.Trenini.Image, "1200", "900");
+    var image = FKValorTheme.Helpers.Helpers.GetImagePath(Model.ContentItem.Content.Trenini.Image, "900", "900");
 }
 
 <section class="trenini">
     @*Lets convert markdown to html here*@
     <h1>@Model.ContentItem.Content.TitlePart.Title</h1>
+    <p>@Model.ContentItem.Content.Trenini.Subtitle.Text</p>
     @if (!string.IsNullOrEmpty(image))
     {
         <div class="trenin-saraksts-wrapper">
