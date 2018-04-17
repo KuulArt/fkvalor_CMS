@@ -38,6 +38,7 @@ Thumbs.db
 *.Resharper
 node_modules/
 is-cache/
+App_Data/
 # dotCover
 *.dotCover
 yessql.db
