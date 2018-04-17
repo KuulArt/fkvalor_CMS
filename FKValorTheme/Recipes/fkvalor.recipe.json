@@ -1,0 +1,1435 @@
+{
+  "name": "FKValor",
+  "displayName": "FKValor",
+  "description": "FK valor recipe",
+  "author": "Toms Lisments",
+  "website": "fkvalor.lv",
+  "version": "1",
+  "issetuprecipe": true,
+  "categories": "",
+  "tags": [],
+
+  // The variables are evaluated the first time they are accessed, and reused across steps
+  "variables": {
+    "landingContentItemId": "[js:uuid()]"
+    // "now": "[js: Date().toISOString()]"
+  },
+  "steps": [
+    {
+      "name": "Content",
+      "data": [
+        {
+          "ContentItemId": "45bknbcha1kra7mxsk43gx43xx",
+          "ContentItemVersionId": "4anehvnc0kt8z37799755z9q4v",
+          "ContentType": "Blog",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2018-03-08T21:02:14.163074Z",
+          "PublishedUtc": "2018-03-08T21:02:15.047081Z",
+          "CreatedUtc": "2018-03-08T10:24:02.554286Z",
+          "Owner": "toms",
+          "Author": "toms",
+          "TitlePart": {
+            "Title": "Jaunumi"
+          },
+          "BodyPart": {
+            "Body": null
+          },
+          "AutoroutePart": {
+            "Path": "blog",
+            "SetHomepage": false
+          },
+          "ListPart": {
+            "FeedProxyUrl": null,
+            "FeedItemsCount": 20
+          },
+          "Blog": {}
+        },
+        {
+          "ContentItemId": "4p7sq357tgec9t3frq5f2h04wb",
+          "ContentItemVersionId": "4b0zftt1pqksnyjhewkwtm7kd5",
+          "ContentType": "RawHtml",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2018-03-13T20:17:09.805764Z",
+          "PublishedUtc": "2018-03-13T20:17:09.858211Z",
+          "CreatedUtc": "2018-03-08T10:24:02.726434Z",
+          "Owner": "toms",
+          "Author": "toms",
+          "LayerMetadata": {
+            "Title": "Footer",
+            "Layer": "Always",
+            "Zone": "Footer",
+            "RenderTitle": false,
+            "Position": 10.0
+          },
+          "RawHtml": {
+            "Content": {
+              "Html": "<!-- This widget is configured in the layers section -->\r\n<div class=\"row footer\">\r\n    <div class=\"col-lg-8 col-md-10 mx-auto\">\r\n        <p class=\"text-muted\">26470416</p>\r\n        <p class=\"text-muted\">fkvalor@gmail.com</p>\r\n        <p class=\"copyright text-muted\">&copy; FK Valor, 2018. Visas tiesības aizsargātas</p>\r\n    </div>\r\n    <div class=\"col-lg-4 col-md-2 align-self-center\">\r\n        <ul class=\"list-inline text-center\">\r\n            <li class=\"list-inline-item\">\r\n                <a href=\"#\">\r\n                    <span class=\"fa-stack fa-lg\">\r\n                        <i class=\"fa fa-circle fa-stack-2x\"></i>\r\n                        <i class=\"fab fa-twitter fa-stack-1x fa-inverse\"></i>\r\n                    </span>\r\n                </a>\r\n            </li>\r\n            <li class=\"list-inline-item\">\r\n                <a href=\"#\">\r\n                    <span class=\"fa-stack fa-lg\">\r\n                        <i class=\"fa fa-circle fa-stack-2x\"></i>\r\n                        <i class=\"fab fa-facebook fa-stack-1x fa-inverse\"></i>\r\n                    </span>\r\n                </a>\r\n            </li>\r\n            <li class=\"list-inline-item\">\r\n                <a href=\"#\">\r\n                    <span class=\"fa-stack fa-lg\">\r\n                        <i class=\"fa fa-circle fa-stack-2x\"></i>\r\n                        <i class=\"fab fa-instagram fa-stack-1x fa-inverse\"></i>\r\n                    </span>\r\n                </a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</div>"
+            }
+          }
+        },
+        {
+          "ContentItemId": "49gwp7d4ht1b9z85skjpwwa6m0",
+          "ContentItemVersionId": "41zxwe5f7zaa81pne8c9bzg1x2",
+          "ContentType": "BlogPost",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2018-04-03T09:27:31.603855Z",
+          "PublishedUtc": "2018-04-03T09:27:31.6848698Z",
+          "CreatedUtc": "2018-03-18T19:44:29.1489221Z",
+          "Owner": "rkarlispraulins",
+          "Author": "rkarlispraulins",
+          "BlogPost": {
+            "Subtitle": {
+              "Text": "Futbola Kluba Valor mājaslapa ir dzimusi!"
+            },
+            "Image": {
+              "Paths": [
+                "VALOR-hello-world.jpg"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "jaunumi/fk-valor-majaslapa",
+            "SetHomepage": false
+          },
+          "MarkdownPart": {
+            "Markdown": "Sveicināti FK Valor oficiālajā mājaslapā! Šeit varēsiet sekot līdzi mūsu jaunumiem un svarīgām ziņām, kā arī redzēt treniņu grafikus!\r\n"
+          },
+          "TitlePart": {
+            "Title": "FK Valor mājaslapa"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "45bknbcha1kra7mxsk43gx43xx",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "4pzd3sdeban9r6s5h5y29vkrnq",
+          "ContentItemVersionId": "49twagsw7eyf83y5znvaaktewv",
+          "ContentType": "Blog",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2018-04-13T17:37:34.351366Z",
+          "PublishedUtc": "2018-04-13T17:37:34.4253311Z",
+          "CreatedUtc": "2018-03-08T17:45:23.257705Z",
+          "Owner": "toms",
+          "Author": "davids.cudars",
+          "Blog": {},
+          "AutoroutePart": {
+            "Path": "komanda",
+            "SetHomepage": false
+          },
+          "ListPart": {
+            "FeedProxyUrl": null,
+            "FeedItemsCount": 20
+          },
+          "TitlePart": {
+            "Title": "Komanda"
+          },
+          "BodyPart": {
+            "Body": null
+          }
+        },
+        {
+          "ContentItemId": "4fyr6xktv48nm5kk02mr4q51m3",
+          "ContentItemVersionId": "4k1h2skm710ng11j2k64fy1xmw",
+          "ContentType": "Menu",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2018-04-13T17:37:51.5043522Z",
+          "PublishedUtc": "2018-04-13T17:37:51.5476691Z",
+          "CreatedUtc": "2018-03-08T10:24:02.361762Z",
+          "Owner": null,
+          "Author": "davids.cudars",
+          "MenuPart": {},
+          "TitlePart": {
+            "Title": "Main Menu"
+          },
+          "MenuItemsListPart": {
+            "MenuItems": [
+              {
+                "Id": 0,
+                "ContentItemId": "4sk8gaes1h5830mefmbfedfw5x",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": null,
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": null,
+                "LinkMenuItemPart": {
+                  "Name": "Par mums",
+                  "Url": "~/par-mums"
+                }
+              },
+              {
+                "Id": 0,
+                "ContentItemId": "49nrnen2vmpbzva2syyfw1nrne",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": null,
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": null,
+                "LinkMenuItemPart": {
+                  "Name": "Jaunumi",
+                  "Url": "~/"
+                }
+              },
+              {
+                "Id": 0,
+                "ContentItemId": "4m30bv0v89p8xsexpqtckgk24r",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2018-03-08T17:46:30.308785Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "toms",
+                "LinkMenuItemPart": {
+                  "Name": "Treniņi",
+                  "Url": "~/trenini"
+                }
+              },
+              {
+                "Id": 0,
+                "ContentItemId": "4tjgvstkhzkat6ah2bjhde2n5g",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2018-03-08T17:47:18.980595Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "toms",
+                "LinkMenuItemPart": {
+                  "Name": "Kontakti",
+                  "Url": "~/kontakti"
+                }
+              },
+              {
+                "Id": 0,
+                "ContentItemId": "4ya0pqx43wjrz6373w2m62ddns",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2018-03-08T17:47:37.507039Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "toms",
+                "LinkMenuItemPart": {
+                  "Name": "Komanda",
+                  "Url": "~/komanda"
+                }
+              }
+            ]
+          },
+          "AliasPart": {
+            "Alias": "main-menu"
+          }
+        },
+        {
+          "ContentItemId": "4j70849vsq9pm20jy7nvfdv2xm",
+          "ContentItemVersionId": "4945t2keg94hswt6nrrgb92vcp",
+          "ContentType": "BlogPost",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2018-04-13T17:40:51.4707607Z",
+          "PublishedUtc": "2018-04-13T17:40:51.5442572Z",
+          "CreatedUtc": "2018-04-13T17:40:51.5442572Z",
+          "Owner": "toms",
+          "Author": "toms",
+          "BlogPost": {
+            "Subtitle": {
+              "Text": "Spelētāji:"
+            },
+            "Image": {
+              "Paths": [
+                "LogoTLValor.svg"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "fk-valor",
+            "SetHomepage": false
+          },
+          "MarkdownPart": {
+            "Markdown": null
+          },
+          "TitlePart": {
+            "Title": "Futbola klubs Valor"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "4pzd3sdeban9r6s5h5y29vkrnq",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "41qd79qawhkx2vmevk7wnr2xdk",
+          "ContentItemVersionId": "4wcxsjrrxykjg72bvvwqymfh5n",
+          "ContentType": "Trenini",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2018-04-13T18:03:43.1131155Z",
+          "PublishedUtc": "2018-04-13T18:03:43.1548604Z",
+          "CreatedUtc": "2018-04-13T18:02:05.4431825Z",
+          "Owner": "toms",
+          "Author": "toms",
+          "Trenini": {
+            "Image": {
+              "Paths": [
+                "Kalendars-template02.png"
+              ]
+            },
+            "Subtitle": {
+              "Text": "Šis ir jaunais treniņu grafiks"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "trenini-jauns",
+            "SetHomepage": false
+          },
+          "TitlePart": {
+            "Title": "Treniņi"
+          }
+        },
+        {
+          "ContentItemId": "4szd0vb0xp98439wp1sj7z4350",
+          "ContentItemVersionId": "4e2732tnxk09nx1cfv4crcz7wy",
+          "ContentType": "Article",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2018-04-13T19:37:43.728743Z",
+          "PublishedUtc": "2018-04-13T19:37:43.7615205Z",
+          "CreatedUtc": "2018-03-08T17:45:44.234009Z",
+          "Owner": "toms",
+          "Author": "rkarlispraulins",
+          "Article": {
+            "Subtitle": {
+              "Text": "Šeit pieejams menēša kalendārs katrai vecuma grupai FK Valor komandā. Uzvarētāji plāno!"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "trenini",
+            "SetHomepage": false
+          },
+          "BodyPart": {
+            "Body": "<p>{{ \"Kalendars-template1.png\" | asset_url | img_tag }}<br></p>"
+          },
+          "TitlePart": {
+            "Title": "Treniņu Grafiki"
+          }
+        },
+        {
+          "ContentItemId": "4xe2v7zz7y4x2z1a698qxmggmp",
+          "ContentItemVersionId": "4w72674re2qrhx46npetqe6jdm",
+          "ContentType": "BlogPost",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2018-04-13T20:05:13.7820075Z",
+          "PublishedUtc": "2018-04-13T20:05:13.8645539Z",
+          "CreatedUtc": "2018-04-03T10:35:02.8750683Z",
+          "Owner": "rkarlispraulins",
+          "Author": "rkarlispraulins",
+          "BlogPost": {
+            "Subtitle": {
+              "Text": "Paldies Lauvas Klubam par iespēju mūsu audzēņiem sākt sezonu jaunos bučos!"
+            },
+            "Image": {
+              "Paths": [
+                "Lauvas-Klubs-FK Valor-jauni-futbola-apavi.jpg"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "jaunumi/check-this-out",
+            "SetHomepage": false
+          },
+          "MarkdownPart": {
+            "Markdown": " \r\nTry several different options and include a friendly message to earn more page likes, but be sure to keep it non-spammy. For example, consider telling people why you chose to share the page with them, and why you think they'll find value in it.\r\n \r\nIf you choose to share on your own Timeline, you'll need to set the post to \"Public\" to ensure that everyone will be able to see the post.\r\n"
+          },
+          "TitlePart": {
+            "Title": "Iesāksim sezonu jaunos bučos!"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "45bknbcha1kra7mxsk43gx43xx",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "46960nwwf3jnawav2bs6aetfn2",
+          "ContentItemVersionId": "4zk8vbqtb91rmtfhkefzsx25dk",
+          "ContentType": "Article",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2018-04-13T20:08:00.9774234Z",
+          "PublishedUtc": "2018-04-13T20:08:01.0474969Z",
+          "CreatedUtc": "2018-03-08T17:46:06.900308Z",
+          "Owner": "toms",
+          "Author": "rkarlispraulins",
+          "Article": {
+            "Subtitle": {
+              "Text": null
+            }
+          },
+          "AutoroutePart": {
+            "Path": "kontakti",
+            "SetHomepage": false
+          },
+          "BodyPart": {
+            "Body": "<p>fkvalor@inbox.lv</p><p>Dāvids Čudars: 26470416</p><p><br></p><p>Rekvizīti:</p><p>BIEDRĪBA FUTBOLA KLUBS VALOR</p><p>Reģ Nr. 50008268081</p><p>Ropažu nov. Zaķumuiža, Straumēni 2-27, LV-2133</p><p>A/S Swedbank</p><p>Kods HABALV22</p><p>Konts: LV24HABA0551044096464</p><br>"
+          },
+          "TitlePart": {
+            "Title": "Kontakti"
+          }
+        },
+        {
+          "ContentItemId": "41jrnt3zcxr46yv0z1e5hh6nx7",
+          "ContentItemVersionId": "49xtfmwfapg562bkfhz3knkedv",
+          "ContentType": "Article",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2018-04-16T13:22:28.4442937Z",
+          "PublishedUtc": "2018-04-16T13:22:28.4993515Z",
+          "CreatedUtc": "2018-03-08T10:24:02.7083Z",
+          "Owner": "toms",
+          "Author": "rkarlispraulins",
+          "AutoroutePart": {
+            "Path": "par-mums",
+            "SetHomepage": false
+          },
+          "BodyPart": {
+            "Body": "<p style=\"text-align: center;\"><span style=\"font-size: 1rem;\">Futbola Klubs Valor ir jauniešu futbola klubs, kurš mērķtiecīgi strādā, lai attīstītu futbolu Ropažu novadā un Latvijā.&nbsp;</span></p><p style=\"text-align: center;\"><span style=\"font-size: 1rem;\"><strong>Mūsu mērķi:</strong></span></p><p style=\"text-align: center;\"><span style=\"font-size: 1rem;\">1. Veicināt disciplīnu un personības izaugsmi&nbsp;<br></span><span style=\"font-size: 1rem;\">2. Piesātināt jauniešu ikdienu ar futbola un sporta nodarbībām<br></span><span style=\"font-size: 1rem;\">3. Novērst bērnus un jauniešus no negatīvi ietekmējošām lietām</span><span style=\"font-size: 1rem;\"><br></span><span style=\"font-size: 1rem;\">4. Iemācīt futbola pamatus un pilnveidot futbola spēles pamatus jautrā vidē</span></p><p style=\"text-align: center;\"><strong>Nākotnes Mērķi:</strong></p><p style=\"text-align: center;\"><span style=\"font-size: 1rem;\">1. Izveidot dažādu vecumu komandas, kas ir konkurētspējīgas ar Latvijas vadošajiem klubiem<br></span><span style=\"font-size: 1rem;\">2. Sagatavot individuāli konkurētspējīgus futbolistus pašmāju čempionātam un ārvalstu klubiem<br></span><span style=\"font-size: 1rem;\">3. Nodrošināt veselīgu un sportisku dzīves veidu ikvienam mūsu kluba audzēknim</span></p><p></p><hr style=\"text-align: center;\"><p></p><p style=\"text-align: center;\"><span style=\"font-size: 1rem;\">Biedrība Futbola klubs Valor ir bezpeļņas, sabiedriskā labuma organizācija, kurai SLO statuss piešķirts saskaņā ar LR finanšu ministrijas lēmumu Nr. 192 no 2008. gada 21. augusta. Mūsu mērķis ir atbalstīt bērnu un jauniešu vēlmi nodarboties ar sportu.</span></p>"
+          },
+          "TitlePart": {
+            "Title": "Par Mums"
+          },
+          "Article": {
+            "Subtitle": {
+              "Text": null
+            }
+          }
+        },
+        {
+          "ContentItemId": "4qxnwtvxmyrg5w6mwxq5zyexwz",
+          "ContentItemVersionId": "4cm1sxe2c672w7g7yt24c1f7cq",
+          "ContentType": "BlogPost",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2018-04-17T16:56:35.1788046Z",
+          "PublishedUtc": "2018-04-17T16:56:35.2267287Z",
+          "CreatedUtc": "2018-04-13T20:06:30.3374453Z",
+          "Owner": "rkarlispraulins",
+          "Author": "toms",
+          "BlogPost": {
+            "Subtitle": {
+              "Text": "asdadsasdasd"
+            },
+            "Image": {
+              "Paths": [
+                "Lauvas-Klubs-FK Valor-jauni-futbola-apavi.jpg"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "jaunumi/ashdoh",
+            "SetHomepage": false
+          },
+          "MarkdownPart": {
+            "Markdown": "Test"
+          },
+          "TitlePart": {
+            "Title": "ashdoh"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "45bknbcha1kra7mxsk43gx43xx",
+            "Order": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "ContentDefinition",
+      "ContentTypes": [
+        {
+          "Name": "Menu",
+          "DisplayName": "Menu",
+          "Settings": {
+            "Draftable": "True",
+            "Versionable": "True",
+            "Creatable": "True",
+            "Listable": "True"
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "Position": "1"
+              }
+            },
+            {
+              "PartName": "AliasPart",
+              "Name": "AliasPart",
+              "Settings": {
+                "Position": "2",
+                "AliasPartSettings": {
+                  "Pattern": "{{slug}}"
+                }
+              }
+            },
+            {
+              "PartName": "MenuPart",
+              "Name": "MenuPart",
+              "Settings": {
+                "Position": "3"
+              }
+            },
+            {
+              "PartName": "MenuItemsListPart",
+              "Name": "MenuItemsListPart",
+              "Settings": {
+                "Position": "4"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "LinkMenuItem",
+          "DisplayName": "Link Menu Item",
+          "Settings": {
+            "Stereotype": "MenuItem"
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "LinkMenuItemPart",
+              "Name": "LinkMenuItemPart",
+              "Settings": {}
+            }
+          ]
+        },
+        {
+          "Name": "Article",
+          "DisplayName": "Article",
+          "Settings": {
+            "Creatable": "True",
+            "Draftable": "True",
+            "Versionable": "True",
+            "Listable": "True",
+            "Securable": "False",
+            "Stereotype": null
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Article",
+              "Name": "Article",
+              "Settings": {
+                "Position": "2"
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "Pattern": "{{ ContentItem | display_text | slugify }}",
+                "AllowCustomPath": "True",
+                "ShowHomepageOption": "True",
+                "Position": "1"
+              }
+            },
+            {
+              "PartName": "BodyPart",
+              "Name": "BodyPart",
+              "Settings": {
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "BodyPartSettings": {
+                  "Editor": "Wysiwyg"
+                },
+                "Position": "3"
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "Position": "0"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "LiquidPage",
+          "DisplayName": "Liquid Page",
+          "Settings": {
+            "Creatable": "True",
+            "Draftable": "True",
+            "Versionable": "True",
+            "Listable": "True",
+            "Securable": "False",
+            "Stereotype": null
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "LiquidPage",
+              "Name": "LiquidPage",
+              "Settings": {
+                "Position": "2"
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "Pattern": "{{ ContentItem | display_text | slugify }}",
+                "AllowCustomPath": "True",
+                "ShowHomepageOption": "True",
+                "Position": "1"
+              }
+            },
+            {
+              "PartName": "LiquidPart",
+              "Name": "LiquidPart",
+              "Settings": {
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "Position": "3"
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "Position": "0"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "BlogPost",
+          "DisplayName": "Blog Post",
+          "Settings": {
+            "Creatable": "False",
+            "Draftable": "True",
+            "Versionable": "True",
+            "Listable": "False",
+            "Securable": "True",
+            "Stereotype": null
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "BlogPost",
+              "Name": "BlogPost",
+              "Settings": {
+                "Position": "2"
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "Position": "1",
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "Pattern": "{{ ContentItem | container | display_text | slugify }}/{{ ContentItem | display_text | slugify }}",
+                "AllowCustomPath": "True",
+                "ShowHomepageOption": "False"
+              }
+            },
+            {
+              "PartName": "MarkdownPart",
+              "Name": "MarkdownPart",
+              "Settings": {
+                "Position": "3",
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "MarkdownPartSettings": {
+                  "Editor": "Wysiwyg"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "Position": "0"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Blog",
+          "DisplayName": "Blog",
+          "Settings": {
+            "Creatable": "True",
+            "Draftable": "True",
+            "Versionable": "True",
+            "Listable": "True",
+            "Securable": "True",
+            "Stereotype": null
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Blog",
+              "Name": "Blog",
+              "Settings": {
+                "Position": "0"
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "Position": "2",
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "Pattern": "{{ ContentItem | display_text | slugify }}",
+                "AllowCustomPath": "True",
+                "ShowHomepageOption": "True"
+              }
+            },
+            {
+              "PartName": "ListPart",
+              "Name": "ListPart",
+              "Settings": {
+                "Position": "4",
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "PageSize": 10,
+                "ContainedContentTypes": [
+                  "BlogPost"
+                ]
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "Position": "1"
+              }
+            },
+            {
+              "PartName": "BodyPart",
+              "Name": "BodyPart",
+              "Settings": {
+                "Position": "3"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Container",
+          "DisplayName": "Container",
+          "Settings": {
+            "Creatable": "False",
+            "Draftable": "True",
+            "Versionable": "True",
+            "Listable": "False",
+            "Securable": "True",
+            "Stereotype": "Widget"
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Container",
+              "Name": "Container",
+              "Settings": {
+                "Position": "0"
+              }
+            },
+            {
+              "PartName": "FlowPart",
+              "Name": "FlowPart",
+              "Settings": {
+                "Position": "1"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Blockquote",
+          "DisplayName": "Blockquote",
+          "Settings": {
+            "Creatable": "False",
+            "Draftable": "True",
+            "Versionable": "True",
+            "Listable": "False",
+            "Securable": "True",
+            "Stereotype": "Widget"
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Blockquote",
+              "Name": "Blockquote",
+              "Settings": {
+                "Position": "0"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "ImageWidget",
+          "DisplayName": "Image",
+          "Settings": {
+            "Creatable": "False",
+            "Draftable": "True",
+            "Versionable": "True",
+            "Listable": "False",
+            "Securable": "True",
+            "Stereotype": "Widget"
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Image",
+              "Name": "Image",
+              "Settings": {
+                "Position": "0"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "LiquidWidget",
+          "DisplayName": "Liquid",
+          "Settings": {
+            "Creatable": "False",
+            "Draftable": "True",
+            "Versionable": "True",
+            "Listable": "True",
+            "Securable": "True",
+            "Stereotype": "Widget"
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "LiquidPart",
+              "Name": "LiquidPart",
+              "Settings": {
+                "Position": "0"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Image",
+          "DisplayName": "Image",
+          "Settings": {
+            "Creatable": "False",
+            "Draftable": "False",
+            "Versionable": "True",
+            "Listable": "False",
+            "Securable": "False",
+            "Stereotype": null
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Image",
+              "Name": "Image",
+              "Settings": {
+                "Position": "0"
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "Position": "0"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Paragraph",
+          "DisplayName": "Paragraph",
+          "Settings": {
+            "Creatable": "False",
+            "Draftable": "True",
+            "Versionable": "True",
+            "Listable": "False",
+            "Securable": "True",
+            "Stereotype": "Widget"
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Paragraph",
+              "Name": "Paragraph",
+              "Settings": {
+                "Position": "0"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "RawHtml",
+          "DisplayName": "Raw Html",
+          "Settings": {
+            "Creatable": "False",
+            "Draftable": "True",
+            "Versionable": "True",
+            "Listable": "False",
+            "Securable": "True",
+            "Stereotype": "Widget"
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "RawHtml",
+              "Name": "RawHtml",
+              "Settings": {
+                "Position": "0"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Page",
+          "DisplayName": "Page",
+          "Settings": {
+            "Creatable": "True",
+            "Draftable": "True",
+            "Versionable": "True",
+            "Listable": "True",
+            "Securable": "True",
+            "Stereotype": null
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Page",
+              "Name": "Page",
+              "Settings": {
+                "Position": "3"
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "Position": "1",
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "Pattern": "{{ ContentItem | display_text | slugify }}",
+                "AllowCustomPath": "True",
+                "ShowHomepageOption": "True"
+              }
+            },
+            {
+              "PartName": "FlowPart",
+              "Name": "FlowPart",
+              "Settings": {
+                "Position": "2"
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "Position": "0"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Trenini",
+          "DisplayName": "Trenini",
+          "Settings": {
+            "Creatable": "True",
+            "Draftable": "True",
+            "Versionable": "True",
+            "Listable": "True",
+            "Securable": "True",
+            "Stereotype": null
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Trenini",
+              "Name": "Trenini",
+              "Settings": {
+                "Position": "0"
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "Position": "1",
+                "Pattern": null,
+                "AllowCustomPath": "True",
+                "ShowHomepageOption": "False",
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "Position": "2"
+              }
+            }
+          ]
+        }
+      ],
+      "ContentParts": [
+        {
+          "Name": "AliasPart",
+          "Settings": {
+            "Attachable": "True",
+            "Description": "Provides a way to define custom aliases for content items."
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "AutoroutePart",
+          "Settings": {
+            "Attachable": "True",
+            "Description": "Provides a custom url for your content item."
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "BodyPart",
+          "Settings": {
+            "Attachable": "True",
+            "Description": "Provides a Body for your content item."
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "FlowPart",
+          "Settings": {
+            "Attachable": "True",
+            "Description": "Provides a customizable body for your content item."
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "BagPart",
+          "Settings": {
+            "Attachable": "True",
+            "Reusable": "True",
+            "Description": "Provides a collection behavior for your content item."
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "WidgetsListPart",
+          "Settings": {
+            "Attachable": "True",
+            "Description": "Provides a way to add widgets per content items."
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "ListPart",
+          "Settings": {
+            "Attachable": "True",
+            "Description": "Add a list behavior."
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "MarkdownPart",
+          "Settings": {
+            "Attachable": "True",
+            "Description": "Provides a Markdown formatted body for your content item."
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "CommonPart",
+          "Settings": {
+            "Attachable": "True",
+            "Description": "Provides an editor for the common properties of a content item."
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "LiquidPart",
+          "Settings": {
+            "Attachable": "True",
+            "Description": "Provides a Liquid formatted body for your content item."
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "TitlePart",
+          "Settings": {
+            "Attachable": "True",
+            "Description": "Provides a Title for your content item."
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "BlogPost",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Subtitle",
+              "Settings": {
+                "DisplayName": "Iss apraksts",
+                "Position": "0",
+                "Hint": null,
+                "Editor": null,
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                }
+              }
+            },
+            {
+              "FieldName": "MediaField",
+              "Name": "Image",
+              "Settings": {
+                "DisplayName": "Image",
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "Hint": null,
+                "Required": false,
+                "Multiple": true,
+                "Position": "1"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Article",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Subtitle",
+              "Settings": {
+                "DisplayName": "Subtitle"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Blockquote",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Quote",
+              "Settings": {
+                "DisplayName": "Quote",
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false
+                },
+                "Hint": null,
+                "Editor": "TextArea",
+                "Position": "0"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Image",
+          "Settings": {
+            "Attachable": true
+          },
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "MediaField",
+              "Name": "Media",
+              "Settings": {
+                "DisplayName": "Image",
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false
+                },
+                "Hint": null,
+                "Editor": null,
+                "Position": "0",
+                "Multiple": false,
+                "Required": true
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Caption",
+              "Settings": {
+                "DisplayName": "Caption",
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "Hint": "A description of the image used as title or alternate text",
+                "Editor": null,
+                "Position": "1"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Paragraph",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "HtmlField",
+              "Name": "Content",
+              "Settings": {
+                "DisplayName": "Content",
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false
+                },
+                "Hint": null,
+                "Editor": "Wysiwyg",
+                "Position": "0"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "RawHtml",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "HtmlField",
+              "Name": "Content",
+              "Settings": {
+                "DisplayName": "Content",
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false
+                },
+                "Hint": null,
+                "Editor": "Multiline",
+                "Position": "0"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Blog",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "Trenini",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "MediaField",
+              "Name": "Image",
+              "Settings": {
+                "DisplayName": "Image",
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "Hint": null,
+                "Required": false,
+                "Multiple": true,
+                "Position": "0"
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Subtitle",
+              "Settings": {
+                "DisplayName": "Subtitle",
+                "Hint": null,
+                "Editor": null,
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "Position": "1"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Feature",
+      "enable": [
+        "OrchardCore.Mvc",
+        "OrchardCore.Settings",
+        "OrchardCore.Admin",
+        "OrchardCore.Liquid",
+        "OrchardCore.Contents",
+        "OrchardCore.ContentTypes",
+        "OrchardCore.Alias",
+        "OrchardCore.Authentication",
+        "OrchardCore.Autoroute",
+        "OrchardCore.Body",
+        "OrchardCore.Commons",
+        "OrchardCore.ContentFields",
+        "OrchardCore.ContentPreview",
+        "OrchardCore.CustomSettings",
+        "OrchardCore.Deployment",
+        "OrchardCore.Deployment.Remote",
+        "OrchardCore.Diagnostics",
+        "OrchardCore.DynamicCache",
+        "OrchardCore.Resources",
+        "OrchardCore.Features",
+        "OrchardCore.Feeds",
+        "OrchardCore.Widgets",
+        "OrchardCore.Flows",
+        "OrchardCore.HomeRoute",
+        "OrchardCore.Indexing",
+        "OrchardCore.Scripting",
+        "OrchardCore.Layers",
+        "OrchardCore.Lists",
+        "OrchardCore.Lucene",
+        "OrchardCore.Markdown",
+        "OrchardCore.Title",
+        "OrchardCore.Media",
+        "OrchardCore.Menu",
+        "OrchardCore.Navigation",
+        "OrchardCore.Roles",
+        "OrchardCore.Users",
+        "OrchardCore.Queries",
+        "OrchardCore.Recipes",
+        "OrchardCore.Templates",
+        "OrchardCore.Themes",
+        "FKValorTheme",
+        "SafeMode",
+        "TheAdmin",
+        "TheBlogTheme",
+        "TheTheme"
+      ],
+//      "disable": [
+//        "OrchardCore.Email",
+//        "OrchardCore.Https",
+//        "OrchardCore.Localization",
+//        "OrchardCore.Lucene.Worker",
+//        "OrchardCore.Media.Azure.Storage",
+//        "OrchardCore.OpenId",
+//        "OrchardCore.OpenId.EntityFrameworkCore",
+//        "OrchardCore.Queries.Sql",
+//        "OrchardCore.XmlRpc",
+//        "OrchardCore.RemotePublishing",
+//        "OrchardCore.ResponseCache",
+//        "OrchardCore.Setup",
+//        "OrchardCore.Tenants",
+//        "OrchardCore.Tenants.FileProvider",
+//        "TheAgencyTheme"
+//      ]
+    },
+    {
+      "name": "Templates",
+      "Templates": {}
+    },
+    {
+      "name": "Layers",
+      "Layers": [
+        {
+          "Name": "Always",
+          "Rule": "true",
+          "Description": "The widgets in this layer are displayed on any page of this site."
+        },
+        {
+          "Name": "Homepage",
+          "Rule": "isHomepage()",
+          "Description": "The widgets in this layer are only displayed on the homepage."
+        }
+      ]
+    }
+  ]
+}

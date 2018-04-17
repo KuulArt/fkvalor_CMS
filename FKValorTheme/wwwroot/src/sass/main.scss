@@ -106,13 +106,14 @@
 .menu-logo {
   position: absolute;
   height: 110px;
-  top: 23px;
-  left: 10%;
-  transform: rotate(-5deg);
+  top: 1px;
+  left: 3%;
+  //transform: rotate(-5deg);
   z-index: 4;
   @include media-breakpoint-up(md) {
-    left: initial;
-    top: -35px;
+    height: 178px;
+    left: -20px;
+    top: -69px;
   }
 }
 
