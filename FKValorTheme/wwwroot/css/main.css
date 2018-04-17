@@ -6061,10 +6061,14 @@ body {
 /* Text styles */
 h1 {
   font-family: allerbold;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 800;
   text-align: left;
-  color: #212529; }
+  color: #212529;
+  padding-top: 10px; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 60px; } }
 
 h2 {
   font-family: allerbold;
@@ -6075,9 +6079,12 @@ h2 {
 
 p {
   font-family: allerregular;
-  font-size: 22px;
+  font-size: 16px;
   text-align: left;
   color: #212529; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 22px; } }
 
 a, button {
   font-family: Akrobat-ExtraBold;
@@ -6089,8 +6096,12 @@ a, button {
   a:focus, button:focus {
     outline: none; }
 
+.centered {
+  text-align: center; }
+
 .content-wrapper {
-  background-color: #fed417; }
+  background-color: #fed417;
+  padding: 0 7px; }
 
 .container-fluid.header {
   padding: 0; }
@@ -6223,21 +6234,23 @@ a, button {
     z-index: 4;
     font-size: 36px; }
   .blog-summary p {
-    background: url(/FKValorTheme/img/text-backgroun.png) bottom center no-repeat;
-    height: 101px;
-    background-size: 600px 95px;
-    width: 600px;
-    margin: auto auto 0 auto;
     color: black;
     padding-top: 30px;
     font-family: Akrobat-ExtraBold;
     font-size: 24px; }
-    @media (max-width: 767.98px) {
-      .blog-summary p {
-        background-size: 295px 95px;
-        width: 295px;
-        margin: auto;
-        font-size: 16px; } }
+
+.white-block {
+  background: url(/FKValorTheme/img/text-backgroun.png) bottom center no-repeat;
+  height: 101px;
+  background-size: 600px 95px;
+  width: 600px;
+  margin: auto auto 0 auto; }
+  @media (max-width: 767.98px) {
+    .white-block {
+      background-size: 295px 95px;
+      width: 295px;
+      margin: auto;
+      font-size: 16px; } }
 
 .description {
   padding: 0 15px;
@@ -6296,3 +6309,18 @@ a, button {
   @media (min-width: 992px) {
     .trenini-saraksts {
       max-width: 900px; } }
+
+.article .white-block {
+  height: 101px;
+  background-size: 650px 100px;
+  width: 650px;
+  margin: auto auto 70px auto; }
+  @media (max-width: 767.98px) {
+    .article .white-block {
+      background-size: 295px 110px;
+      height: 113px;
+      width: 295px;
+      margin: auto auto 50px auto;
+      font-size: 16px; } }
+  .article .white-block p {
+    padding-top: 20px; }

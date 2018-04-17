@@ -1,0 +1,26 @@
+@{
+    var centerTitle = false;
+    if (Model.ContentItem.Content.Article.CenterTitle.Value != null)
+    {
+        centerTitle = (bool)Model.ContentItem.Content.Article.CenterTitle.Value;
+    }
+    var subtitle = (string) Model.ContentItem.Content.Article.Subtitle.Text;
+}
+<section class="article">
+    @if (@Model.ContentItem.Content.TitlePart.Title > 0)
+    {
+        <h1 class="@(centerTitle ? "centered" : "")">@Model.ContentItem.Content.TitlePart.Title</h1>
+    }
+    @if (!string.IsNullOrEmpty(subtitle))
+    {
+        <div class="white-block">
+            <p class="centered">
+                @subtitle
+            </p>
+        </div>
+    }
+    @Html.Raw(Markdig.Markdown.ToHtml((string) Model.ContentItem.Content.BodyPart.Body))
+    <div class="back-button-wrapper">
+        <button class="button return-button" onclick="window.history.go(-1);return false;">Atpakaļ</button>
+    </div>
+</section>

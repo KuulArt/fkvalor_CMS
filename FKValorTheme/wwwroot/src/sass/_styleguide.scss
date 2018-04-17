@@ -13,10 +13,14 @@ body {
 /* Text styles */
 h1 {
 	font-family: allerbold;
-	font-size: 60px;
+	font-size: 50px;
 	font-weight: 800;
 	text-align: left;
     color: $black;
+	padding-top: 10px;
+	@include media-breakpoint-up(md) {
+		font-size: 60px;
+	}
 }
 
 h2 {
@@ -29,9 +33,12 @@ h2 {
 
 p {
 	font-family: allerregular;
-	font-size: 22px;
+	font-size: 16px;
 	text-align: left;
     color: $black;
+	@include media-breakpoint-up(md) {
+		font-size: 22px;
+	}
 }
 
 a, button {
@@ -46,4 +53,8 @@ a, button {
 	&:focus {
 		outline: none;
 	}
+}
+
+.centered {
+	text-align: center;
 }
