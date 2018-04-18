@@ -6100,8 +6100,7 @@ a, button {
   text-align: center; }
 
 .content-wrapper {
-  background-color: #fed417;
-  padding: 0 7px; }
+  background-color: #fed417; }
 
 .container-fluid.header {
   padding: 0; }
@@ -6161,7 +6160,7 @@ a, button {
 .nav-item {
   margin: 0 10px; }
   .nav-item a {
-    font-family: Akrobat-Light; }
+    font-family: Akrobat-ExtraBold; }
 
 .menu-logo-wrapper {
   position: relative;
@@ -6213,9 +6212,9 @@ a, button {
   justify-content: center;
   /* align-self: center;    <---- REMOVE */
   align-items: center;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  flex-direction: column; }
   .blog-summary > * {
-    width: 100%;
     text-align: center; }
   .blog-summary .summary-image {
     position: relative;
@@ -6236,15 +6235,15 @@ a, button {
   .blog-summary p {
     color: black;
     padding-top: 30px;
-    font-family: Akrobat-ExtraBold;
-    font-size: 24px; }
+    font-family: Akrobat-ExtraBold; }
 
 .white-block {
   background: url(/FKValorTheme/img/text-backgroun.png) bottom center no-repeat;
   height: 101px;
   background-size: 600px 95px;
   width: 600px;
-  margin: auto auto 0 auto; }
+  margin: auto auto 0 auto;
+  font-family: allerbold; }
   @media (max-width: 767.98px) {
     .white-block {
       background-size: 295px 95px;
@@ -6255,11 +6254,14 @@ a, button {
 .description {
   padding: 0 15px;
   margin-bottom: 15px; }
+  .description h3 {
+    font-family: allerbold; }
+  .description p {
+    font-family: allerbold; }
   @media (min-width: 576px) {
     .description {
       padding: initial; } }
   .description > * {
-    width: 100%;
     text-align: center; }
 
 .date {
@@ -6311,7 +6313,7 @@ a, button {
       max-width: 900px; } }
 
 .article .white-block {
-  height: 101px;
+  height: 110px;
   background-size: 650px 100px;
   width: 650px;
   margin: auto auto 70px auto; }
@@ -6324,3 +6326,62 @@ a, button {
       font-size: 16px; } }
   .article .white-block p {
     padding-top: 20px; }
+
+.contact-page {
+  text-align: center; }
+  .contact-page h2, .contact-page h1 {
+    text-align: center;
+    margin-bottom: 20px; }
+  .contact-page .contact-entry {
+    font-size: 40px;
+    margin-bottom: 20px; }
+    .contact-page .contact-entry > * {
+      color: #212529; }
+    .contact-page .contact-entry span {
+      display: block;
+      font-size: 24px;
+      margin: auto; }
+  .contact-page .rekviziti {
+    margin-top: 70px;
+    position: relative;
+    padding: 40px 5px;
+    background-color: #363334; }
+    @media (min-width: 576px) {
+      .contact-page .rekviziti {
+        padding: 40px 0; }
+        .contact-page .rekviziti:before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          left: -100%;
+          top: 0;
+          background-color: #363334; }
+        .contact-page .rekviziti:after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          left: 100%;
+          top: 0;
+          background-color: #363334; }
+        .contact-page .rekviziti .logo {
+          display: block; } }
+    .contact-page .rekviziti h2 {
+      text-align: left;
+      color: #ededed; }
+    .contact-page .rekviziti p {
+      color: #ededed;
+      margin: 0; }
+  .contact-page .logo {
+    display: none;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    height: 200px; }
+
+.atbalsta img {
+  width: 80px; }
+  @media (max-width: 767.98px) {
+    .atbalsta img {
+      width: 50px; } }

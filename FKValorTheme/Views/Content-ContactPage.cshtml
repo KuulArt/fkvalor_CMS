@@ -1,0 +1,55 @@
+@*<div class="blog-summary row">*@
+@*    @Html.Partial("Shared/_BlogSummary.cshtml")*@
+@*</div>*@
+@*@{*@
+@*    var image = FKValorTheme.Helpers.Helpers.GetImagePath(Model.ContentItem.Content.Trenini.Image);*@
+@*}*@
+
+<section class="contact-page">
+    @*Lets convert markdown to html here*@
+    <h1>@Model.ContentItem.Content.TitlePart.Title</h1>
+    
+    <div class="contact-entry">
+        <a href="mailto:@Model.ContentItem.Content.ContactPage.Email.Text">
+            <i class="fa fa-envelope"></i>
+            <span>@Model.ContentItem.Content.ContactPage.Email.Text</span>
+        </a>
+    </div>
+
+    <div class="contact-entry">
+        <a href="tel:@Model.ContentItem.Content.ContactPage.Phone.Text">
+            <i class="fa fa-phone"></i>
+            <span>@Model.ContentItem.Content.ContactPage.Phone.Text</span>
+        </a>
+    </div>
+
+    <h1>Seko mums!</h1>
+    <div class="contact-entry">
+        <a href="https://www.facebook.com/FUTBOLAKLUBSVALOR/">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>
+            <span>
+                @@FUTBOLAKLUBSVALOR
+            </span>
+        </a>
+    </div>
+    
+    <div class="contact-entry">
+        <a href="https://www.instagram.com/fkvalor/">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+            </span>
+            <span>fkvalor</span>
+        </a>
+    </div>
+    
+    <div class="rekviziti">
+        <h2>Rekvizīti</h2>
+        @Html.Raw(Markdig.Markdown.ToHtml((string) Model.ContentItem.Content.BodyPart.Body))
+        <img class="logo" src="/FKValorTheme/img/valor-white.png"/>
+    </div>
+    @*    <button class="button return-button" onclick="window.history.go(-1); return false;">Atpakaļ</button>*@
+</section>

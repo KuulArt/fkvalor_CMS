@@ -20,7 +20,4 @@
         </div>
     }
     @Html.Raw(Markdig.Markdown.ToHtml((string) Model.ContentItem.Content.BodyPart.Body))
-    <div class="back-button-wrapper">
-        <button class="button return-button" onclick="window.history.go(-1);return false;">Atpakaļ</button>
-    </div>
 </section>

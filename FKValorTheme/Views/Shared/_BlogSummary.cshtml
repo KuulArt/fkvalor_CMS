@@ -6,10 +6,10 @@
     var image = FKValorTheme.Helpers.Helpers.GetImagePath(Model.ContentItem.Content.BlogPost.Image, "500", "300");
     if (!string.IsNullOrEmpty(image))
     {
-        <span class="summary-image">
+        <div class="summary-image">
             <img  src=@image/>
             <span class="date">@dateCreated</span>
-        </span>
+        </div>
         // Could use later a separate template for this, but fck it for now, Im tired
 //        var contentItemSummary = await ContentItemDisplayManager.BuildDisplayAsync(contentItem, Model.Context.Updater, "Summary", Model.Context.GroupId);
     
