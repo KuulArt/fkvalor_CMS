@@ -6385,3 +6385,10 @@ a, button {
   @media (max-width: 767.98px) {
     .atbalsta img {
       width: 50px; } }
+
+ul.pager {
+  list-style: none;
+  padding: 0; }
+  ul.pager li {
+    text-align: center;
+    margin: auto; }

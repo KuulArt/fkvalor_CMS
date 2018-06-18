@@ -376,3 +376,14 @@
     }
   }
 }
+
+// Pager
+ul.pager {
+  list-style: none;
+  padding: 0;
+  
+  li {
+    text-align: center;
+    margin: auto;
+  }
+}

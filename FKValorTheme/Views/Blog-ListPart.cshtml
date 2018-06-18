@@ -1,5 +1,12 @@
 @model OrchardCore.Lists.ViewModels.ListPartViewModel
 @inject OrchardCore.ContentManagement.Display.IContentItemDisplayManager ContentItemDisplayManager
+@{
+//    Model.Pager.Classes.Add("blog-pagination");
+    Model.Pager.PreviousText = T["Jaunākie"];
+    Model.Pager.NextText = T["Iepriekšējie"];
+    Model.Pager.PreviousClass = "button";
+    Model.Pager.NextClass = "button";
+}
 @foreach (var item in Model.ContentItems)
 {
     var contentItemSummary = await ContentItemDisplayManager.BuildDisplayAsync(item, Model.Context.Updater, "Summary", Model.Context.GroupId);
